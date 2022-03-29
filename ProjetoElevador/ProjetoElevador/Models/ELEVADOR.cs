@@ -11,14 +11,14 @@ namespace ProjetoElevador.Model
         private int LANDAR; //ANDAR QUE ELEVADOR ESTAR//
         public void Inicializar(int Capacidade, int ANDAR) {
             this.CMAX = Capacidade;
-            this.LANDAR = ANDAR;
+            this.TOTAND = ANDAR;
         
         }
         public void Entrar()
         {
             if (this.QP == this.CMAX)
             {
-                Console.WriteLine("Capacidade Maxima Atingida!")
+                Console.WriteLine("Capacidade Maxima Atingida!");
             }
             else if(this.QP < this.CMAX)
             {
@@ -35,8 +35,8 @@ namespace ProjetoElevador.Model
             }
             else if(this.QP > 0)
             {
-                this.QP -=1
-                    Console.WriteLine($"Quantidade de Pessoas no Elevador:{this.QP}")
+                this.QP -= 1;
+                Console.WriteLine($"Quantidade de Pessoas no Elevador:{this.QP}");
             }
         }
 
